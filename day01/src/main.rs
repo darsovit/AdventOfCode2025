@@ -8,7 +8,11 @@ fn main() {
         Ok(line_content) => {
             {
                 let day01 = Day01::new(line_content.lines());
-                println!("{}", day01.run());
+                println!("{}", day01.part1());
+            }
+            {
+                let day01 = Day01::new(line_content.lines());
+                println!("{}", day01.part2());
             }
         },
         Err(e) => { println!("Error reading file: {}, {:?}", DATAFILE, e); }
